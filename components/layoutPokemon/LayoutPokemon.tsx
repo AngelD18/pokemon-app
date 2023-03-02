@@ -14,7 +14,10 @@ export const LayoutPokemon: NextPage<Props> = ({
   isInFavorites,
 }) => {
   return (
-    <Layout title={pokemon.name}>
+    <Layout
+      title={pokemon.name}
+      img={pokemon.sprites.other?.dream_world.front_default || "/no-image.png"}
+    >
       <Grid.Container css={{ marginTop: "5px" }} gap={2}>
         <Grid xs={12} sm={4}>
           <Card isHoverable css={{ padding: "30px" }}>

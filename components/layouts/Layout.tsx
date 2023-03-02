@@ -5,9 +5,10 @@ import { Navbar } from "../ui";
 interface Props {
   children: any;
   title?: string;
+  img?: string;
 }
 const origin = typeof window === "undefined" ? "" : window.location.origin;
-export const Layout: FC<Props> = ({ children, title }) => {
+export const Layout: FC<Props> = ({ children, title, img }) => {
   return (
     <>
       <Head>
@@ -31,7 +32,10 @@ export const Layout: FC<Props> = ({ children, title }) => {
           property="og:description"
           content={`Esta es la página sobre  ${title}`}
         />
-        <meta property="og:image" content={`${origin}/img/banner.png`} />
+        <meta
+          property="og:image"
+          content={img ? `${img}` : `${origin}/img/banner.png`}
+        />
       </Head>
       <Navbar />
       <main
