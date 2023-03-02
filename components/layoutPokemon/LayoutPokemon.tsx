@@ -16,7 +16,7 @@ export const LayoutPokemon: NextPage<Props> = ({
   return (
     <Layout
       title={pokemon.name}
-      img={"pokemon.png"}
+      img={"pokemon.jpeg"}
     >
       <Grid.Container css={{ marginTop: "5px" }} gap={2}>
         <Grid xs={12} sm={4}>
