@@ -41,7 +41,7 @@ export const Navbar = () => {
           flex: 1,
         }}
       />
-      <NextLink href={"/favorites"} passHref>
+      <NextLink href={"/favorites"} passHref style={{ marginBottom: 27 }}>
         <Link></Link>
         <Text color="white">Favoritos</Text>
       </NextLink>
