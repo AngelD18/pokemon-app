@@ -1,10 +1,11 @@
 import { Layout } from "@/components/layouts";
 
 import { NextPage, GetStaticProps } from "next";
-import { Grid } from "@nextui-org/react";
+import { Grid, Image } from "@nextui-org/react";
 import { pokeApi } from "@/api";
 import { PokemonListResponse, SmallPokemon } from "@/interfaces";
 import { PokemonCard } from "@/components/pokemon";
+
 
 interface Props {
   pokemons: SmallPokemon[];

@@ -34,7 +34,7 @@ export const Layout: FC<Props> = ({ children, title, img }) => {
         />
         <meta
           property="og:image"
-          content={img ? `${img}` : `${origin}/img/banner.png`}
+          content={img ? `${origin}/img/Link.png` : `${origin}/img/banner.png`}
         />
       </Head>
       <Navbar />
